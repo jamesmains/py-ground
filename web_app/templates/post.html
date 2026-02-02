@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="grid">
+    <div class="crop-container">
+        <img class="post-img" src="{{ url_for('static', filename=image) }}" alt="{{ title }}">
+    </div>
+    <div>
+        <h2>{{title}}</h2>
+        <p>{{message}}</p>
+        <a role="button" href="{{ url_for('gallery') }}">Back to Gallery</a>
+    </div>
+</div>
+{% endblock %}

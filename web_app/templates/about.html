@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>About</h2>
+<div class="profile-container container">
+    <img class="profile" src="{{url_for('static', filename='img/profile.png')}}">
+</div>
+<p></p>
+<p>This is a demo web app that I made to learn more about <a
+        href="https://flask.palletsprojects.com/en/stable/">Flask</a>. I've used it before on my home server, but it's
+    been awhile since then so I wanted to work with it again.</p>
+<p>Included in this demo are some <strong>embarassing</strong> Halloween pictures of me from an office party in 2019.
+    Enjoy.</p>
+<p>I didn't include any kind of database in this project so forgive some of the more 'hard coded' aspects and just
+    pretend I know what I'm doing.</p>
+{% endblock %}
