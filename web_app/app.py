@@ -26,7 +26,7 @@ def post(post):
         msg="Time to pose for real and win the Halloween competition and score some babes."
     elif(post == 3):
         src='img/hacker-man-2.png'
-        title="Ask for my Phone Back"
+        title="Asking for my Phone Back"
         msg="Paul (camera operator) was asked to hand over the phone. He refused. Tensions escalated. Combat all but ensured."
     elif(post == 4):
         src='img/hacker-man-3.png'
@@ -37,16 +37,6 @@ def post(post):
         title="Post not found!"
         msg="Uh oh!"
     return render_template("post.html", image=src, title=title,message=msg)
-
-@app.route("/<int:test>")
-def test(test):
-    if(test is 1):
-        msg="Testing works"
-    elif(test is 2):
-        msg="Testing still works!"
-    else:
-        msg="Test still works but unrecognized number!"
-    return render_template("test.html",message=msg,number=test)
 
 if __name__ == "__main__":
     print("\n--- Starting Server at http://127.0.0.1:5000 ---")
